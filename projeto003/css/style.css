@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     background-image: linear-gradient(to bottom,rgb(41, 8, 133),rgb(103, 3, 103));
@@ -33,20 +34,20 @@ body {
     display: flex;
 }
 .women-foto {
-    width: 100vh;
     margin-top: 30px;
+    margin-right: 20px;
 }
 .primeira-sessao {
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 10vh;
+    margin-left: 20px;
 }
 .primeira-sessao-texto {
     display: flex;
     flex-direction: column;
-    margin-top: 20vh;
-    margin-left: 18vh;
-    position: relative;
     height: 68vh;
+    margin-top: 30px;
+    width: 300px;
 }
 .primeira-sessao-titulo01 {
     color: rgb(158, 76, 90);
@@ -60,14 +61,15 @@ body {
     color: white;
     margin-top: 20px;
 }
+.primeira-sessao-div-botao-entrar {
+    display: flex;
+    justify-content: center;
+}
 .primeira-sessao-botao-entrar {
     width: 130px;
     height: 40px;
     border-radius: 10px;
     border: none;
-    position: absolute;
-    top: 70%;
-    right: 35%;
 }
 .primeira-sessao-botao-entrar:hover {
     color: white;
@@ -75,5 +77,46 @@ body {
     transition: 0.2s;
 }
 footer {
-    
+    background-color: black;
+}
+.footer-titulo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-item {
+    color: white;
+    padding-left: 30%;
+}
+@media (min-width: 768px) {
+    .women-foto {
+        width: 50vh;
+        justify-content: center;
+    }
+    .primeira-sessao-botao-entrar {
+        margin-top: 20px;
+    }
+    .primeira-sessao {
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 767px) {
+    .women-foto {
+        display: none;
+    }
+    .primeira-sessao-botao-entrar {
+        margin-top: 20px;
+    }
+    .primeira-sessao {
+        margin-bottom: 0px;
+    }
+    .primeira-sessao-texto {
+        width: 80vh;
+    }
 }
