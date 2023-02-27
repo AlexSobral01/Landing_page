@@ -24,7 +24,7 @@ body {
     text-decoration: none;
     list-style: none;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 .link-item:hover {
     color: blue;
@@ -39,15 +39,15 @@ body {
 }
 .primeira-sessao {
     justify-content: space-around;
-    margin-bottom: 10vh;
     margin-left: 20px;
+    height: 600px;
 }
 .primeira-sessao-texto {
     display: flex;
     flex-direction: column;
     height: 68vh;
     margin-top: 30px;
-    width: 300px;
+    width: 400px;
 }
 .primeira-sessao-titulo01 {
     color: rgb(158, 76, 90);
@@ -60,6 +60,7 @@ body {
 .primeira-sessao-paragrafo01 {
     color: white;
     margin-top: 20px;
+    font-size: 25px;
 }
 .primeira-sessao-div-botao-entrar {
     display: flex;
@@ -74,7 +75,30 @@ body {
 .primeira-sessao-botao-entrar:hover {
     color: white;
     background-color: rgb(84, 3, 84);
-    transition: 0.2s;
+    transition: 0.3s;
+}
+.segunda-sessao {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.segunda-sessao-texto {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.segunda-sessao-titulo01 {
+    justify-content: center;
+    display: flex;
+    color: white;
+    padding-bottom: 30px;
+}
+.segunda-sessao-paragrafo {
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
 }
 footer {
     background-color: black;
@@ -84,21 +108,20 @@ footer {
     color: white;
     justify-content: center;
     padding-bottom: 10px;
+    padding-top: 20px;
 }
 .footer-list {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding-bottom: 20px;
 }
 .footer-item {
     color: white;
     padding-left: 30%;
+    list-style: none;
 }
 @media (min-width: 768px) {
-    .women-foto {
-        width: 50vh;
-        justify-content: center;
-    }
     .primeira-sessao-botao-entrar {
         margin-top: 20px;
     }
@@ -106,7 +129,7 @@ footer {
         margin-bottom: 0px;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 918px) {
     .women-foto {
         display: none;
     }
@@ -115,8 +138,19 @@ footer {
     }
     .primeira-sessao {
         margin-bottom: 0px;
+        height: 400px;
     }
     .primeira-sessao-texto {
         width: 80vh;
+    }
+    .link-item {
+        display: none;
+    }
+    .cabecalho {
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    footer {
+        margin-left: ;
     }
 }
