@@ -30,6 +30,9 @@ body {
     color: blue;
     transition: 0.4s;
 }
+.menu_hamburguer_conteiner {
+    display: none;
+}
 .primeira-sessao {
     display: flex;
 }
@@ -121,15 +124,24 @@ footer {
     padding-left: 30%;
     list-style: none;
 }
-@media (min-width: 768px) {
-    .primeira-sessao-botao-entrar {
-        margin-top: 20px;
-    }
-    .primeira-sessao {
-        margin-bottom: 0px;
-    }
-}
 @media (max-width: 918px) {
+    .nav-list {
+        display: none;
+        background-color: white;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        height: 50vh;
+        width: 48.5vh;
+    }
+    .link-item {
+        color: black;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .menu_hamburguer_conteiner {
+        display: block;
+    }
     .women-foto {
         display: none;
     }
@@ -142,9 +154,6 @@ footer {
     }
     .primeira-sessao-texto {
         width: 80vh;
-    }
-    .link-item {
-        display: none;
     }
     .cabecalho {
         justify-content: space-between;
